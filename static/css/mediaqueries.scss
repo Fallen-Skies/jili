@@ -1,0 +1,246 @@
+//1366分辨率媒体查询层叠样式表
+@media(max-width:1399px){
+	.box-flex{
+	    display: flex;
+	}
+    .wrapper{
+        .header .logo {
+            width: 150px;
+            height: 100%;
+        }
+    }
+	.box-head-margin{
+	    margin: 20px 10px 0;
+	}
+    .shop1-body{
+        margin: 20px 10px 0 !important;
+    }
+    .body-middle{
+        margin: 20px 10px 0;
+    }
+    .sidebar{
+        >.bg{
+            height: 50px !important;
+        }
+        .sidebar-el-menu:not(.el-menu--collapse) {
+            width: 150px;
+        }
+        .el-submenu__title .iconfont {
+            margin-right: 25px;
+            display: none;
+        }
+        .el-menu-item i {
+            display: none;
+        }
+        .el-submenu__icon-arrow{
+            right: 15px;
+        }
+        .el-menu-item{
+            width: 150px;
+            padding-left: 20px !important;
+        }
+        .el-submenu__title{
+            width: 150px;
+            padding-left: 15px !important;
+        }
+    }
+    .content-box {
+        left: 150px;
+        .content{
+            padding: 10px;
+        }
+    }
+
+    //Dashboard
+    .page-title{
+       padding-left: 10px;
+       margin: -10px -10px 0;
+    }
+
+    .model_2-follow-list{
+        .model_2-follow-item-rank{
+            left: 10px;
+            position: relative;
+        }
+    }
+
+    .model_2-hd-list{
+        .model_2-hd-item-name {
+            width: 23%;
+        }
+        .model_2-hd-item-city{
+            width: 8%;
+        }
+        .model_2-hd-item-unit {
+            width: 12%;
+        }
+        .model_2-hd-item-value {
+            width: 8%;
+        }
+    }
+
+    //子页面导航
+    .header-nav{
+        padding-left: 10px;
+        margin:0  -10px;
+    }
+
+    //营销诊断
+    .marketing{
+
+        .body-zd2-text{
+            >ul{
+               padding: 20px 12px !important;
+            }
+        }
+        .chart-box{
+            margin-left: 0% !important;
+        }
+        .marketing-cx-body{
+            margin: 30px 3.6% !important;
+        }
+    }
+
+    .table1{
+        .model_0-list{
+
+            .model_0-item-img{
+                left: 20px !important;
+            }
+            .model_0-item-name{
+                left: 94px !important;
+            }
+            .model_0-item-num {
+                right: 20px !important;
+            }
+
+        }
+    }
+
+    .table2-btn{
+        .span-left{
+            margin-right: 0 !important;
+        }
+    }
+
+    .body-middle-flex{
+        .col-1{
+            padding-right: 20px !important;
+        }
+        .col-3{
+            .chart-box{
+                height: 430px !important;
+            }
+        }
+    }
+
+    .table3-flex{
+        .cx-shu{
+            margin-left: 20px !important;
+        }
+        .cx-text{
+            margin-left: 20px !important;
+        }
+        .cx-cb{
+            margin-right: 10px !important;
+        }
+    }
+
+    .table3-flex2{
+        padding: 0 !important;
+    }
+
+    .table3-flex3{
+        padding: 0 !important;
+        .flex3-body {
+            padding: 0 30px 0 10px !important;;
+        }
+    }
+
+    //按钮区
+    .shop1-body-btn,.body-middle-btn{
+        .span-left{
+            margin-left: 20px !important;
+        }
+        .el-button{
+            margin-left: 20px !important;
+        }
+    }
+
+    .body-middle-chart{
+        h3{
+            >span{
+                min-width: 80px !important;
+            }
+        }
+    }
+
+    .semesterManage1-flex {
+        >div{
+            padding: 0 10px !important;
+            &:first-child{
+                padding-left: 0 !important;
+            }
+            &:last-child{
+                padding-right: 0 !important;
+            }
+        }
+        .flex-body4{
+            padding-top: 38px !important;
+        }
+    }
+    .semesterManage1-dt-flex{
+        .col-dt-3 {
+            padding-left: 30px !important;
+        }
+
+    }
+    .semesterManage2_body{
+        .body_content{
+            width: 28% !important;
+        }
+    }
+
+    .model_media{
+        .chart-box{
+            margin-left: -50px;
+        }
+    }
+
+    .monitoring1-jinrong{
+        .jinrong-head{
+            font-size: 12px !important;
+        }
+        .jinrong-foot{
+            font-size: 12px !important;
+        }
+    }
+    .el-tabs__item{
+        padding: 0 15px ;
+    }
+
+    .kid-list .kid-item-num span {
+        font-size: 30px !important;
+    }
+
+    .questionnaire1,.questionnaire3{
+        .body-middle-btn{
+            padding:0 15px;
+            height: 120px;
+            display: block;
+            >span{
+                line-height: 60px;
+            }
+            .el-button{
+                top: 2px;
+            }
+            .linefeed{
+                display: block;
+                >span:first-child{
+                    margin-left: 0 !important;
+                }
+            }
+        }
+    }
+
+}

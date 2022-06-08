@@ -1,0 +1,295 @@
+//单细胞通用样式
+.body-middle{
+
+    .middle-text-center{
+        text-align: center;
+    }
+
+    .float-right{
+        float: right;
+    }
+
+    .chart-bar-span{
+        text-align: center;
+        >span{
+        	display: inline-block;
+        	position: relative;
+        	font-size: 14px;
+        	color: #333333;
+        	font-weight: 700;
+        	padding:20px 0 0 20px;
+        	margin: 0px 15px 30px;
+        	&:after{
+        		content: "";
+        		position: absolute;
+        		top: 24.5px;
+        		left: 0;
+        		width: 12px;
+        		height: 12px;
+        	}
+        }
+    }
+
+    .chart-bar-bottom{
+        >span{
+        	&:nth-child(1):after{
+        		background-color:#ff6666;
+        	}
+        }
+    }
+
+    .chart-bars-bottom{
+        >span{
+        	&:nth-child(1):after{
+        		background-color:#ff6074;
+        	}
+            &:nth-child(2):after{
+        		background-color:#ff8d9b;
+        	}
+            &:nth-child(3):after{
+        		background-color:#ffb2b2;
+        	}
+        }
+    }
+
+    .chart-linebar-bottom{
+        >span{
+            margin: 0px 20px;
+            &:nth-child(n+6):after{
+                top: 29px;
+                width: 20px;
+                left: -8px;
+                height: 3px;
+            }
+        	&:nth-child(1):after{
+        		background-color:#ffb2b2;
+        	}
+            &:nth-child(2):after{
+        		background-color:#ff6074;
+        	}
+            &:nth-child(3):after{
+        		background-color:#de4155;
+        	}
+            &:nth-child(4):after{
+        		background-color:#707376;
+        	}
+            &:nth-child(5):after{
+        		background-color:#131313;
+        	}
+            &:nth-child(6):after{
+        		background-color:#ea4d4d;
+        	}
+            &:nth-child(7):after{
+        		background-color:#111111;
+        	}
+        }
+    }
+
+    .chart-line-span{
+        text-align: center;
+        >span{
+        	display: inline-block;
+        	position: relative;
+        	font-size: 14px;
+        	color: #333333;
+        	font-weight: 700;
+        	padding-left:20px;
+        	margin: 0 15px;
+        	&:after{
+        		content: "";
+        		position: absolute;
+        		top: 9px;
+        		width: 20px;
+        		left: -8px;
+        		height: 3px;
+        	}
+        }
+    }
+
+    .chart-lineTwo-bottom{
+        padding-top: 30px;
+        >span{
+        	&:nth-child(1):after{
+        		background-color:#ffb2b2;
+        	}
+        	&:nth-child(2):after{
+        		background-color:#ff6074;
+        	}
+            &:nth-child(3):after{
+        		background-color:#de4155;
+        	}
+        	&:nth-child(4):after{
+        		background-color:#707376;
+        	}
+            &:nth-child(5):after{
+        		background-color:#131313;
+        	}
+        }
+    }
+
+    .chart-linesTwo-bottom{
+        padding-top: 40px;
+        >span{
+            margin: 0 50px;
+        	&:nth-child(1):after{
+        		background-color:#ea4d4d;
+        	}
+        	&:nth-child(2):after{
+        		background-color:#111111;
+        	}
+        }
+    }
+
+    .chart-linesbar-bottom{
+        padding-top: 20px;
+        >span{
+        	&:nth-child(1):after{
+        		background-color:#111111;
+        	}
+        	&:nth-child(2):after{
+                top: 4.5px;
+                left: 0;
+                width: 12px;
+                height: 12px;
+        		background-color:#ff6666;
+        	}
+        }
+    }
+    //翻页样式
+    .table_paging{
+        width: 182px;
+        height: 32px;
+        background-color: #ffffff;
+        border-radius: 4px;
+        border: solid 1px #dde2ec;
+        text-align: center;
+        line-height: 30px;
+        display: flex;
+        font-size: 12px;
+        margin:30px auto 0px;
+        font-family: MicrosoftYaHei;
+        >div{
+            display: inline-block;
+            width: 60px;
+            height: 30px;
+            letter-spacing: 0.2px;
+            color: #495057;
+        }
+        >span{
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            letter-spacing: 0.2px;
+            color: #495057;
+            background-color: #ffffff;
+            &:nth-child(2){
+               background-color: #f63c53;
+               color: #fff;
+            }
+            &:nth-child(3){
+               box-shadow: inset -1px 0px 0px 0px #dde2ec;
+            }
+        }
+    }
+    .body-middle-chart{
+        .chart-max-width{
+            max-width: 100px;
+            height: 30px;
+            line-height: 30px;
+            top: -6px;
+            font-family: MicrosoftYaHei;
+            font-size: 14px;
+            color: #ffffff;
+            border-radius: 3px;
+            >i{
+               font-family: FontAwesome;
+            }
+        }
+        .chart-max-color{
+            margin-left:10px;
+            background-image: linear-gradient(0deg, #4f5255 0%, #131313 100%),
+            linear-gradient(#f63c53, #f63c53);
+        }
+    }
+	//表格
+	.table-body{
+	    padding-top: 5px;
+	    .el-col{
+	        line-height: 50px;
+	        height: 50px;
+	    }
+	    .body-head{
+	        background-color: #f2f4f8;
+	        font-size: 12px;
+	        font-family: MicrosoftYaHei-Bold;
+	        color: #333333;
+	        display: flex;
+	        font-weight: 700;
+	    }
+	    .body-foot{
+	        font-family: MicrosoftYaHei;
+	        font-size: 12px;
+	        color: #333333;
+	        display: flex;
+	        .el-col{
+	            background-color: #ffffff;
+	            box-shadow: inset 0px -1px 0px 0px #f2f4f8;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+	            >span{
+	                width: 22px;
+	                height: 22px;
+	                display: inline-block;
+	                border-radius: 3px;
+	                color: #fff;
+	                font-size: 14px;
+	                text-align: center;
+	                line-height: 22px;
+	                margin: 0 5px;
+	                &:first-child{
+	                    background-image: linear-gradient(0deg, #4f5255 0%, #131313 100%),
+	                    linear-gradient(#58c9f3, #58c9f3);
+	                }
+	                &:last-child{
+	                    background-color: #f63c53;
+	                }
+	            }
+                .span-color{
+                    background-image: linear-gradient(0deg, #4f5255 0%, #131313 100%),
+                    linear-gradient(#58c9f3, #58c9f3);
+                }
+                >div{
+                    text-align: center;
+                    >span{
+                        height: 30px;
+                        background-color: #f63c53;
+                        display: inline-block;
+                        border-radius: 3px;
+                        line-height: 30px;
+                        color: #fff;
+                        padding: 0px 15px;
+                        &:nth-child(2){
+                            margin: 0 10px;
+                        }
+                    }
+                }
+                @media (max-width:1400px) {
+                    >div{
+                        text-align: center;
+                        >span{
+                            height: 26px;
+                            line-height: 26px;
+                            padding: 0px 10px;
+                            &:nth-child(2){
+                                margin: 0 5px;
+                            }
+                        }
+                    }
+                }
+	        }
+	    }
+	}
+
+
+}

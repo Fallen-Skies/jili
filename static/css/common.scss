@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "fjallaone";
+    src: url("~static/fonts/fjallaone-regular-webfont.woff2") format("woff2"),
+        url("~static/fonts/fjallaone-regular-webfont.woff") format("woff"),
+        url("~static/fonts/fjallaone-regular-webfont.ttf") format("truetype"),
+        url("~static/fonts/fjallaone-regular-webfont.eot") format("embedded-opentype"),
+        url("~static/fonts/fjallaone-regular-webfont.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none
+}
+
+ul,
+dl {
+    list-style: none;
+}
+
+html,
+body,
+#app,
+.wrapper {
+    width: 100%;
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.content-box {
+    position: absolute;
+    left: 260px;
+    right: 0;
+    top: 58px;
+    bottom: 0;
+    overflow-y: auto;
+    /*
+    -webkit-transition: left .1s ease-in-out;
+    transition: left .1s ease-in-out;
+    */
+    background: #f0f0f0;
+}
+
+.content {
+    position: relative;
+    width: auto;
+    padding: 10px 20px;
+    background: url(~static/img/dashboard/bg_down.png);
+    background-size: 100% auto;
+    background-position: bottom center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-top: -10px;
+        background: url(~static/img/dashboard/bg_up.png);
+        background-size: 100% auto;
+    }
+}
+
+body .echarts {
+    width: 100%;
+    height: 100%;
+}
